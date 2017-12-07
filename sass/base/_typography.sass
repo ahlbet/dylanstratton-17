@@ -1,0 +1,31 @@
+body
+  font-family: 'Lato', sans-serif
+  font-weight: 400
+  /*font-size: 16px*/
+  line-height: 1.7
+  color: $color-grey-dark
+
+.heading-primary
+  color: $color-white
+  text-transform: uppercase
+  backface-visibility: hidden
+  margin-bottom: 6rem
+
+  &--main
+    display: block
+    font-size: 5rem
+    font-weight: 100
+    letter-spacing: 1.2rem
+
+    @include respond(phone)
+      letter-spacing: 1rem
+      font-size: 5rem
+
+  &--sub
+    display: block
+    font-size: 2rem
+    font-weight: 100
+    letter-spacing: 1.2rem
+
+    @include respond(phone)
+      letter-spacing: .5rem

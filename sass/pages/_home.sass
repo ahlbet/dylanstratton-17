@@ -1,0 +1,109 @@
+.sketch-wrapper
+  overflow: hidden
+
+.circles
+  padding: 5rem 0
+  &__image
+    width: 100%
+
+.about
+  color: $color-grey-dark-3
+  max-width: $grid-width
+  margin: 0 auto
+  padding: 5rem 0
+
+  @include respond(tab-port)
+    max-width: 75rem
+    padding: 0 3rem
+
+  &__heading
+    text-transform: uppercase
+    font-size: 6rem
+    font-weight: 300
+  &__text
+    font-size: $default-font-size
+    width: 90%
+
+    @include respond(tab-port)
+      width: 100%
+
+.projects
+  color: $color-grey-dark-3
+  max-width: $grid-width
+  margin: 0 auto
+  padding: 5rem 0
+
+  &__heading
+    text-transform: uppercase
+    font-size: 6rem
+    font-weight: 300
+    margin: 0 auto
+
+    @include respond(tab-port)
+      max-width: 75rem
+      padding: 0 3rem
+
+  &__image
+    width: 100%
+
+  &__description
+    font-size: $default-font-size
+    @include respond(tab-port)
+      margin-left: 3rem
+  &__link
+    &:link,
+    &:visited
+    text-decoration: none
+    color: $color-primary
+
+    &:hover,
+    &:active
+      color: rgba($color-primary, 0.8)
+
+.contact
+  color: $color-grey-dark-3
+  max-width: $grid-width
+  margin: 0 auto
+  padding: 5rem 0
+
+  @include respond(tab-port)
+    max-width: 75rem
+    padding: 0 3rem
+
+  &__heading
+    text-transform: uppercase
+    font-size: 6rem
+    font-weight: 300
+    margin: 0 auto
+
+    @include respond(tab-port)
+      max-width: 75rem
+
+  &__text
+    font-size: $default-font-size
+    width: 90%
+
+    @include respond(tab-port)
+      width: 100%
+
+    &--1
+      margin-bottom: 2rem
+
+    &--2
+      margin-bottom: 2rem
+
+  &__email,
+  &__link
+    &:link,
+    &:visited
+    text-decoration: none
+    color: $color-primary
+
+    &:hover,
+    &:active
+      color: rgba($color-primary, 0.8)
+
+.last-image-wrapper
+  padding-top: 5rem
+  .last-image
+    width: 100%
