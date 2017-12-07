@@ -40,12 +40,6 @@ function windowResized() {
   resizeCanvas(windowWidth, windowHeight);
 }
 
-function mousePressed() {
-  clear();
-  particles = [];
-  seed();
-}
-
 class Particle {
   constructor(x, y, rad, op) {
     this.x = x;
