@@ -15,6 +15,10 @@ function setup() {
 }
 
 function draw() {
+  if (frameCount > 3000) {
+    noLoop();
+  }
+
   for (let i = 0; i < particles.length; i++) {
     particles[i].show();
     particles[i].move();
